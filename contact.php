@@ -39,14 +39,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $mail->isSMTP(); // Set mailer to use SMTP
             $mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers
             $mail->SMTPAuth = true; // Enable SMTP authentication
-            $mail->Username = '551847@student.embuni.ac.ke'; // Your Gmail address
-            $mail->Password = 'tariqlakeisha926'; // Your Gmail password (or app password)
+            $mail->Username = ''; // Your Gmail address
+            $mail->Password = ''; // Your Gmail password (or app password)
             $mail->SMTPSecure = 'tls'; // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 587; // TCP port to connect to
 
             // Recipients
             $mail->setFrom($email, $name); // Sender's email and name
-            $mail->addAddress('551847@student.embuni.ac.ke'); // Add a recipient (your email)
+            $mail->addAddress(''); // Add a recipient (your email)
 
             // Content
             $mail->isHTML(true); // Set email format to HTML
