@@ -2,7 +2,7 @@
 $host = 'localhost';
 $db = 'online_store';
 $user = 'root';
-$pass = 'Tariq926';
+$pass = '';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
